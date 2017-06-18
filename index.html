@@ -4,36 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
-.bgimg {
+body {
+  /*background: transparent url("images/symphony.png") repeat scroll 0% 0%;*/
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
     background-image: url('images/kanahaukka.jpg');
     min-height: 100%;
-    background-position: center;
-    background-size: cover;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/puu.jpg");
+    min-height: 400px;
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2 {
+        background-attachment: scroll;
+    }
 }
 </style>
 <body>
 
+<!-- Background pattern from Subtle Patterns https://www.toptal.com/designers/subtlepatterns -->
+
 <!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-animate-top w3-opacity-min">
+    <a href="#home" class="w3-bar-item w3-button">AB</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-right">Ota yhteyttä</a>
+    <a href="#100birds" class="w3-bar-item w3-button w3-right">100 Lintulajia haaste</a>
+    <a href="#birds" class="w3-bar-item w3-button w3-right">Linnut galleria</a>
+    <a href="#photos" class="w3-bar-item w3-button w3-right">Kuvia</a>
+  </div>
 </div>
 
-<!-- Content -->
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <button class="w3-button w3-grey w3-xlarge" onclick="w3_open()">☰</button>
-
-<!--
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
--->
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-animate-opacity w3-text-white" id="home">
   <div class="w3-display-middle">
     <h1 class="w3-xlarge w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
@@ -47,6 +74,79 @@ body, html {height: 100%}
 -->
 </div>
 
+<!-- Kuvia container -->
+<div class="w3-content w3-container w3-padding-64" style="max-width:1500px" id="photos">
+  <h1 class="w3-xlarge">Kuvia</h1>
+
+  <!-- Photo Grid -->
+  <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+    <div class="w3-half">
+      <img src="images/alppiruusu.jpg" style="width:100%">
+      <img src="images/kanis.jpg" style="width:100%">
+      <!--<img src="images/kiipija.jpg" style="width:100%">-->
+      <img src="images/puu.jpg" style="width:100%">
+      <img src="images/punis.jpg" style="width:100%">
+      <img src="images/punarinta.jpg" style="width:100%">
+      <img src="images/kukka.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/vastarakki.jpg" style="width:100%">
+      <img src="images/orava.jpg" style="width:100%">
+      <img src="images/peippo.jpg" style="width:100%">
+      <img src="images/mustarastas.jpg" style="width:100%">
+      <img src="images/alppiruusu1.jpg" style="width:100%">
+    </div>
+
+<!--
+    <div class="w3-third">
+      <img src="images/puu.jpg" style="width:100%">
+      <img src="images/kanahaukka.jpg" style="width:100%">
+      <img src="images/puu.jpg" style="width:100%">
+      <img src="images/kanahaukka.jpg" style="width:100%">
+      <img src="images/puu.jpg" style="width:100%">
+      <img src="images/puu.jpg" style="width:100%">
+    </div>
+-->
+  </div>
+
+</div>
+
+<!-- Second Parallax Image with Portfolio Text
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Linnut galleria</span>
+  </div>
+</div>
+-->
+
+<!-- Linnut galleria container -->
+<div class="w3-content w3-container w3-padding-64" id="birds">
+  <h1 class="w3-xlarge">Linnut galleria</h1>
+</div>
+
+<!-- 100 Lintua haaste container -->
+<div class="w3-content w3-container w3-padding-64" id="100birds">
+  <h1 class="w3-xlarge">100 Lintulajia haaste</h1>
+</div>
+
+<!-- Ota yhteytää haaste container -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h1 class="w3-xlarge">Ota yhteyttä</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-xlarge" style="margin-top:128px">
+  <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-instagram w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+  <i class="fa fa-github w3-hover-opacity" aria-hidden="true"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!--<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+</footer>
+
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.width = "100%";
@@ -55,7 +155,15 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
+
+
 </script>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- smooth -->
+<script src="js/smooth.js"></script>
 
 </body>
 </html>
