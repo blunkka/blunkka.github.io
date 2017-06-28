@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <title>Aki Blomqvist - Luontoa etsimen l&auml;pi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,17 +52,19 @@ body {
 <div class="w3-top">
   <div class="w3-bar w3-light-grey w3-animate-top w3-opacity-min">
     <a href="#home" class="w3-bar-item w3-button">AB</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-right">Ota yhteytt&auml;</a>
-    <a href="#100birds" class="w3-bar-item w3-button w3-right">100 Lintulajia haaste</a>
-    <a href="#gallery" class="w3-bar-item w3-button w3-right">Valokuvagalleria</a>
-    <a href="#photos" class="w3-bar-item w3-button w3-right">Kuvia</a>
+    <a href="#" class="w3-bar-item w3-button w3-right lang-switch" data-locale="fi">FI</a>
+    <a href="#" class="w3-bar-item w3-button w3-right lang-switch" data-locale="en">EN</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-contact">common-title-contact</span></a>
+    <a href="#100birds" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-100birds">common-title-100birds</span></a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-gallery">common-title-gallery</span></a>
+    <a href="#photos" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-photos">common-title-photos</span></a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-animate-opacity w3-text-white" id="home">
   <div class="w3-display-middle">
-    <h1 class="w3-large w3-animate-top">Luontoa etsimen l&auml;pi</h1>
+    <h1 class="w3-large w3-animate-top" data-i18n="site-title">site-title</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">www.akiblomqvist.fi</p>
   </div>
@@ -76,8 +78,8 @@ body {
 
 <!-- Kuvia container -->
 <div class="w3-content w3-container w3-padding-64" id="photos">
-  <h1 class="w3-xlarge">Kuvia</h1>
-  Alle olen koonnut muutamia minun ottamia valokuvia. Enemm&auml;n kuvia l&ouml;ytyy <a href="#gallery" class="w3-hover-text-green">valokuvagalleriasta</a>.
+  <h1 class="w3-xlarge"><span data-i18n="common-title-photos">common-title-photos</span></h1>
+  <span data-i18n="photos-text">photos-text</span><a href="#gallery" class="w3-hover-text-green"><span data-i18n="photos-text-link">photos-text-link</span></a>.
 </div>
 
 <div class="w3-content w3-container w3-border-bottom" style="max-width:1500px" id="photos">
@@ -127,22 +129,26 @@ body {
 
 <!-- Linnut galleria container -->
 <div class="w3-content w3-container w3-padding-64" id="gallery">
-  <h1 class="w3-xlarge">Valokuvagalleria</h1>
-  Valokuvagalleriaani p&auml;&auml;set t&auml;st&auml;: <a target="_blank" href="http://galleria.akiblomqvist.fi" class="w3-hover-text-green">galleria.akiblomqvist.fi</a>
+  <h1 class="w3-xlarge"><span data-i18n="common-title-gallery">common-title-gallery</span></h1>
+  <span data-i18n="gallery-text">gallery-text</span><a target="_blank" href="http://galleria.akiblomqvist.fi" class="w3-hover-text-green"><span data-i18n="gallery-text-link">gallery-text-link</span></a>.
 </div>
 
 <!-- 100 Lintua haaste container -->
 <div class="w3-content w3-container w3-padding-64" id="100birds">
-  <h1 class="w3-xlarge">100 Lintulajia haaste</h1>
-  <a target="_blank" href="https://www.birdlife.fi" class="w3-hover-text-green">BirdLife Suomi ry</a> j&auml;rjest&auml;&auml; vuoden 2017 aikana hauskan
-  <a target="_blank" href="https://www.birdlife.fi/lintuharrastus/100lintulajia/" class="w3-hover-text-green">'Tunnista 100 lintulajia'</a> -kampanjan, jonka tarkoituksena on innostaa ihmisi&auml; lintuharrastuksen pariin ja samalla juhlistaa Suomen 100-vuotisjuhlaa. Minun ajantasaisen <i>bongaus</i> tilanteen l&ouml;yd&auml;t t&auml;&auml;lt&auml;:
-  <a target="_blank" href="http://www.akiblomqvist.fi/100lintulajia" class="w3-hover-text-green">akiblomqvist.fi/100lintulajia</a>.
+  <h1 class="w3-xlarge"><span data-i18n="common-title-100birds">common-title-100birds</span></h1>
+  <a target="_blank" href="https://www.birdlife.fi" class="w3-hover-text-green"><span data-i18n="birds-text-link-1">birds-text-link-1</span></a>
+  <span data-i18n="birds-text-1">birds-text-1</span>
+  <a target="_blank" href="https://www.birdlife.fi/lintuharrastus/100lintulajia/" class="w3-hover-text-green">'<span data-i18n="birds-text-link-2">birds-text-link-2</span>'</a>
+  <span data-i18n="birds-text-2">birds-text-2</span>
+  <a target="_blank" href="http://www.akiblomqvist.fi/100lintulajia" class="w3-hover-text-green"><span data-i18n="birds-text-link-3">birds-text-link-3</span></a>
 </div>
 
 <!-- Ota yhteyt&auml;&auml; haaste container -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h1 class="w3-xlarge">Ota yhteytt&auml;</h1>
-  Minuun saa parhaiten yhteytt&auml; s&auml;hk&ouml;postitse <b>etunimi.sukunimi@gmail.com</b>. Nokkelimmat osaavat laittaa minun nimet oikeille paikoille... Sivun alapalkissa l&ouml;ytyy linkkej&auml; minun eri palveluiden profiileihin.
+  <h1 class="w3-xlarge"><span data-i18n="common-title-contact">common-title-contact</span></h1>
+  <span data-i18n="contact-text-1">contact-text-1</span>
+  <b><span data-i18n="contact-text-2">contact-text-2</span></b>
+  <span data-i18n="contact-text-3">contact-text-3</span>
 </div>
 
 <!-- Footer -->
@@ -165,8 +171,6 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
-
-
 </script>
 
 <!-- jQuery -->
@@ -174,6 +178,17 @@ function w3_close() {
 
 <!-- smooth -->
 <script src="js/smooth.js"></script>
+
+<!-- i18n -->
+<script src="js/CLDRPluralRuleParser.js"></script>
+<script src="js/jquery.i18n.js"></script>
+<script src="js/jquery.i18n.messagestore.js"></script>
+<script src="js/jquery.i18n.fallbacks.js"></script>
+<script src="js/jquery.i18n.language.js"></script>
+<script src="js/jquery.i18n.parser.js"></script>
+<script src="js/jquery.i18n.emitter.js"></script>
+<script src="js/jquery.i18n.emitter.bidi.js"></script>
+<script src="js/main-jquery_i18n.js"></script>
 
 </body>
 </html>
