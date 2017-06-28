@@ -1,20 +1,25 @@
 <html>
 <head>
   <title></title>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- localize -->
+  <script src="js/jquery.localize.min.js"></script>
+
 </head>
 <body>
 
 <h1 data-localize="greeting"> Hello! </h1>
 
 <script>
-  $("[data-localize]").localize("application", { language: "fr" });
+  $(function(){
+    $("[data-localize]").localize("application", { language: "fr" });
+  })
 </script>
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
 
-<!-- localize -->
-<script src="js/jquery.localize.min.js"></script>
 
 </body>
 </html>
