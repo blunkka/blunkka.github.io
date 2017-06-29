@@ -27,7 +27,8 @@ jQuery(document).ready(function() {
       'birds-text-link-3': 'akiblomqvist.fi/100lintulajia',
       'contact-text-1': 'Best way to contact me is by email ',
       'contact-text-2': 'firstname.lastname@gmail.com.',
-      'contact-text-3': ' You know what to replace... Also note the profile links in the footer.'
+      'contact-text-3': ' You know what to replace... Also note the profile links in the footer.',
+      'nav-close': 'Close x'
     },
     'fi': {
       'site-title': 'Luontoa etsimen läpi',
@@ -46,7 +47,8 @@ jQuery(document).ready(function() {
       'birds-text-link-3': 'akiblomqvist.fi/100lintulajia',
       'contact-text-1': 'Minuun saa parhaiten yhteyttä sähköpostitse ',
       'contact-text-2': 'etunimi.sukunimi@gmail.com.',
-      'contact-text-3': 'Nokkelimmat osaavat laittaa minun nimet oikeille paikoille... Sivun alapalkissa löytyy linkkejä minun eri palveluiden profiileihin.'
+      'contact-text-3': 'Nokkelimmat osaavat laittaa minun nimet oikeille paikoille... Sivun alapalkissa löytyy linkkejä minun eri palveluiden profiileihin.',
+      'nav-close': 'Sulje x'
     }
   });
 
