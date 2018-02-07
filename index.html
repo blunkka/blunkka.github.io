@@ -37,6 +37,14 @@ body {
     margin-bottom: 12px;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2 {
@@ -57,6 +65,7 @@ body {
     <a href="#" class="w3-bar-item w3-button w3-right lang-switch w3-hide-small" data-locale="fi">FI</a>
     <a href="#" class="w3-bar-item w3-button w3-right lang-switch w3-hide-small" data-locale="en">EN</a>
     <a href="#contact" class="w3-bar-item w3-button w3-right w3-hide-small"><span data-i18n="common-title-contact">common-title-contact</span></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-right w3-hide-small"><span data-i18n="common-title-ndfilter">common-title-ndfilter</span></a>
     <a href="#100birds" class="w3-bar-item w3-button w3-right w3-hide-small"><span data-i18n="common-title-100birds">common-title-100birds</span></a>
     <a href="#gallery" class="w3-bar-item w3-button w3-right w3-hide-small"><span data-i18n="common-title-gallery">common-title-gallery</span></a>
     <a href="#photos" class="w3-bar-item w3-button w3-right w3-hide-small"><span data-i18n="common-title-photos">common-title-photos</span></a>
@@ -68,6 +77,7 @@ body {
     <a href="#photos" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-photos">common-title-photos</span></a>
     <a href="#gallery" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-gallery">common-title-gallery</span></a>
     <a href="#100birds" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-100birds">common-title-100birds</span></a>
+    <a href="#contact" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-ndfilter">common-title-ndfilter</span></a>
     <a href="#contact" class="w3-bar-item w3-button w3-right"><span data-i18n="common-title-contact">common-title-contact</span></a>
     <a href="#" class="w3-bar-item w3-button w3-right lang-switch" data-locale="fi">FI</a>
     <a href="#" class="w3-bar-item w3-button w3-right lang-switch" data-locale="en">EN</a>
@@ -157,6 +167,35 @@ body {
   <a target="_blank" href="https://www.birdlife.fi/lintuharrastus/100lintulajia/" class="w3-hover-text-green">'<span data-i18n="birds-text-link-2">birds-text-link-2</span>'</a>
   <span data-i18n="birds-text-2">birds-text-2</span>
   <a target="_blank" href="http://www.akiblomqvist.fi/100lintulajia" class="w3-hover-text-green"><span data-i18n="birds-text-link-3">birds-text-link-3</span></a>
+</div>
+
+<!-- ND filter chart cheat sheet -->
+<div class="w3-content w3-container w3-padding-64" id="ndfilter">
+  <h1 class="w3-xlarge"><span data-i18n="common-title-ndfilter">common-title-ndfilter</span></h1>
+  <table id="ndfiltertable">
+    <tr>
+      <th><span data-i18n="nd-th-filter">nd-th-filter</span></th><th><span data-i18n="nd-th-stops">nd-th-stops</span></th><th colspan="18"><span data-i18n="nd-th-shutter">nd-th-shutter</span></th>
+    </tr>
+    <tr>
+      <td><span data-i18n="nd-td-text-nofilter">nd-td-text-nofilter</span></tdL><td>0 <span data-i18n="nd-td-text-stops">nd-td-text-stops</span></td><td>1/4000s</td><td>1/2000s</td><td>1/1000s</td><td>1/500s</td><td>1/250s</td><td>1/125s</td><td>1/60s</td><td>1/30s</td><td>1/15s</td><td>1/8s</td><td>1/4s</td><td>1/2s</td><td>1s</td><td>2s</td><td>4s</td><td>8s</td><td>15s</td><td>30s</td>
+    </tr>
+    <tr>
+      <td>ND4</td><td>2 <span data-i18n="nd-td-text-stops">nd-td-text-stops</span></td><td>1/2000s</td><td>1/1000s</td><td>1/500s</td><td>1/250s</td><td>1/125s</td><td>1/60s</td><td>1/30s</td><td>1/15s</td><td>1/8s</td><td>1/4s</td><td>1/2s</td><td>1s</td><td>2s</td><td>4s</td><td>8s</td><td>15s</td><td>30s</td><td>1m</td>
+    </tr>
+    <tr>
+        <td>ND64</td><td>6 <span data-i18n="nd-td-text-stops">nd-td-text-stops</span></td><td>1/60s</td><td>1/30s</td><td>1/15s</td><td>1/8s</td><td>1/4s</td><td>1/2s</td><td>1s</td><td>2s</td><td>4s</td><td>8s</td><td>15s</td><td>30s</td><td>1m</td><td>2m</td><td>4m</td><td>8m</td><td>16m</td><td>32m</td>
+    </tr>
+    <tr>
+        <td>ND1000</td><td>10 <span data-i18n="nd-td-text-stops">nd-td-text-stops</span></td><td>1/4s</td><td>1/2s</td><td>1s</td><td>2s</td><td>4s</td><td>8s</td><td>15s</td><td>30s</td><td>1m</td><td>2m</td><td>4m</td><td>8m</td><td>16m</td><td>32m</td><td>1h4m</td><td>2h8m</td><td>4h16m</td><td>8h32m</td>
+    </tr>    
+  </table>
+  <!--
+  <a target="_blank" href="https://www.birdlife.fi" class="w3-hover-text-green"><span data-i18n="birds-text-link-1">birds-text-link-1</span></a>
+  <span data-i18n="birds-text-1">birds-text-1</span>
+  <a target="_blank" href="https://www.birdlife.fi/lintuharrastus/100lintulajia/" class="w3-hover-text-green">'<span data-i18n="birds-text-link-2">birds-text-link-2</span>'</a>
+  <span data-i18n="birds-text-2">birds-text-2</span>
+  <a target="_blank" href="http://www.akiblomqvist.fi/100lintulajia" class="w3-hover-text-green"><span data-i18n="birds-text-link-3">birds-text-link-3</span></a>
+  -->
 </div>
 
 <!-- Ota yhteyt&auml;&auml; haaste container -->

@@ -16,6 +16,7 @@ jQuery(document).ready(function() {
       'common-title-gallery': 'Photo gallery',
       'common-title-100birds': '100 Birds challenge',
       'common-title-contact': 'Contact me',
+      'common-title-ndfilter': 'Neutral density exposure chart',
       'photos-text': 'I have collected few of my photos below. To see more photos go to my ',
       'photos-text-link': 'photo gallery',
       'gallery-text': 'You can access my photo gallery here: ',
@@ -28,6 +29,11 @@ jQuery(document).ready(function() {
       'contact-text-1': 'Best way to contact me is by email ',
       'contact-text-2': 'firstname.lastname@gmail.com.',
       'contact-text-3': ' You know what to replace... Also note the profile links in the footer.',
+      'nd-th-filter': 'Filter',
+      'nd-th-stops': 'Light reduction in stops',
+      'nd-th-shutter': 'Shutter speed',
+      'nd-td-text-nofilter': 'No filter',
+      'nd-td-text-stops': 'stops',
       'nav-close': 'Close x'
     },
     'fi': {
@@ -36,6 +42,7 @@ jQuery(document).ready(function() {
       'common-title-gallery': 'Valokuvagalleria',
       'common-title-100birds': '100 Lintulajia haaste',
       'common-title-contact': 'Ota yhteyttä',
+      'common-title-ndfilter': 'Harmaasuodin valotustaulukko',
       'photos-text': 'Alle olen koonnut muutamia minun ottamia valokuvia. Enemmän kuvia löytyy ',
       'photos-text-link': 'valokuvagalleriasta',
       'gallery-text': 'Valokuvagalleriaani pääset tästä: ',
@@ -48,6 +55,11 @@ jQuery(document).ready(function() {
       'contact-text-1': 'Minuun saa parhaiten yhteyttä sähköpostitse ',
       'contact-text-2': 'etunimi.sukunimi@gmail.com.',
       'contact-text-3': 'Nokkelimmat osaavat laittaa minun nimet oikeille paikoille... Sivun alapalkissa löytyy linkkejä minun eri palveluiden profiileihin.',
+      'nd-th-filter': 'Suodin',
+      'nd-th-stops': 'Valon vähentyminen aukkoina',
+      'nd-th-shutter': 'Suljinaika',
+      'nd-td-text-nofilter': 'Ei suodinta',
+      'nd-td-text-stops': 'aukkoa',
       'nav-close': 'Sulje x'
     }
   });
