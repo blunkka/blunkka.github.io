@@ -43,7 +43,7 @@ jQuery(document).ready(function() {
       'common-title-100birds': '100 Lintulajia haaste',
       'common-title-contact': 'Ota yhteyttä',
       'common-title-ndfilter': 'Harmaasuodin valotustaulukko',
-      'photos-text': 'Alle olen koonnut muutamia minun ottamia valokuvia. Enemmän kuvia löytyy ',
+      'photos-text': 'Olen koonnut alle muutamia minun ottamia valokuvia. Enemmän kuvia löytyy ',
       'photos-text-link': 'valokuvagalleriasta',
       'gallery-text': 'Valokuvagalleriaani pääset tästä: ',
       'gallery-text-link': 'galleria.akiblomqvist.fi',
